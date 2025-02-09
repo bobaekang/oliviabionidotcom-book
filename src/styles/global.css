@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@import "@fontsource/overpass";
+@import "@fontsource/satisfy";
+
+@theme {
+  --font-sans: "Overpass", "sans-serif";
+  --font-display: "Satisfy", "cursive";
+}
