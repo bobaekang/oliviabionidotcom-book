@@ -3,7 +3,18 @@ import { links } from "../const";
 import LinkButton from "./LinkButton.astro";
 ---
 
-<div class="flex space-x-4">
+<div class="sm:flex space-x-4 hidden">
+  <div>
+    <LinkButton href={links.shopBookCollection} variant="filled"
+      >Buy EPUB & PDF</LinkButton
+    >
+  </div>
+  <div class="flex flex-col text-center">
+    <LinkButton href="" variant="outlined" disabled>Buy on Kindle</LinkButton>
+    <span class="m-2 text-sm">(Coming soon)</span>
+  </div>
+</div>
+<div class="sm:hidden space-y-4 flex flex-col">
   <div>
     <LinkButton href={links.shopBookCollection} variant="filled"
       >Buy EPUB & PDF</LinkButton

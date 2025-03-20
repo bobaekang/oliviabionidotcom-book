@@ -9,7 +9,7 @@ import SectionContainer from "./SectionContainer.astro";
 
 <SectionContainer>
   <div
-    class="lg:w-[1024px] w-full px-8 sm:px-16 flex flex-row space-x-8 space-y-16 justify-center items-center flex-wrap"
+    class="lg:w-[1024px] w-full px-8 sm:px-16 flex flex-row sm:space-x-8 space-y-16 justify-center items-center flex-wrap"
   >
     <div class="relative">
       <div class="size-48 bg-theme absolute -top-18 -left-14 -z-10"></div>
@@ -19,7 +19,7 @@ import SectionContainer from "./SectionContainer.astro";
           <br />
           <span class="font-display">The Book</span>
         </h1>
-        <div>
+        <div class="w-full">
           <p>Your guide to becoming a great Pilates teacher.</p>
           <p>
             <LinkText href={links.bookSampleChapters}
