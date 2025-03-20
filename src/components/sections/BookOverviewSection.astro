@@ -1,0 +1,70 @@
+---
+import SectionContainer from "./SectionContainer.astro";
+import SectionTitle from "./SectionTitle.astro";
+
+const bookOverview = [
+  {
+    title: "Part 1. Becoming A Pilates Teacher",
+    description:
+      "Embark on your Pilates teaching journey. Explore self-reflection, training options, effective teaching methodologies, and the path to national certification.",
+  },
+  {
+    title: "Part 2. For Brand New Teachers",
+    description:
+      "Launch your Pilates career with confidence. Discover practical guidance on scope of practice, studio selection, building confidence, and thriving in your early years.",
+  },
+  {
+    title: "Part 3. Teaching Group Classes",
+    description:
+      "Master the art of group Pilates instruction. Learn behind-the-scenes strategies, effective programming, and how to create seamless, engaging classes.",
+  },
+  {
+    title: "Part 4. Teaching Private Sessions",
+    description:
+      "Elevate your one-on-one teaching. Discover how to build your private clientele and effectively teach sessions in various settings, from studios to client homes.",
+  },
+  {
+    title: "Part 5. Teaching Virtually",
+    description:
+      "Transition your Pilates teaching online. Learn to deliver impactful virtual classes and private sessions, adapting your skills to the digital space.",
+  },
+  {
+    title: "Part 6. Class Programming Strategies",
+    description:
+      "Design dynamic and effective Pilates classes. Explore optimal teaching theories, structuring classes with flow, and creating seamless progressions for all levels.",
+  },
+  {
+    title: "Part 7. Getting In Your Teaching Groove",
+    description:
+      "Refine your teaching artistry. Discover strategies for improving cueing, finding your flow, managing your schedule, and maintaining a fulfilling teaching career.",
+  },
+  {
+    title: "Part 8. Working With People",
+    description:
+      "Build strong client relationships and navigate diverse client needs. Learn to create a therapeutic alliance and effectively work with various populations.",
+  },
+  {
+    title: "Part 9. What Comes Next?",
+    description:
+      "Chart your future in Pilates. Explore diverse career paths and opportunities for growth beyond teaching, empowering you to expand your professional horizons.",
+  },
+];
+---
+
+<SectionContainer extraClass="space-y-8">
+  <SectionTitle>
+    Book <span class="text-theme">Overview</span>
+  </SectionTitle>
+  <div class="lg:w-[1024px] w-full px-8 sm:px-16 space-y-8">
+    <div class="grid grid-flow-row sm:grid-cols-2 grid-cols-1 gap-8">
+      {
+        bookOverview.map((item) => (
+          <div>
+            <h2 class="font-bold">{item.title}</h2>
+            <p>{item.description}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</SectionContainer>

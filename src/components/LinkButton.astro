@@ -1,0 +1,29 @@
+---
+interface Props {
+  href: string;
+  variant: "filled" | "outlined";
+  extraClass?: string;
+  disabled?: boolean;
+}
+
+const { href, variant = "outlined", extraClass = "", disabled } = Astro.props;
+const baseClass =
+  "inline-block px-6 py-2 font-bold rounded-md ring-2 ring-accent hover:ring-accent/80 hover:italic focus:ring-accent/80 focus:italic";
+const variantClass = {
+  filled: "bg-accent hover:bg-accent/80 focus:bg-accent/80",
+  outlined: "hover:bg-accent/20 focus:bg-accent/20",
+}[variant];
+const disabledClass = disabled
+  ? "cursor-not-allowed pointer-events-none opacity-40 bg-gray-200 ring-gray-500"
+  : "";
+---
+
+<a
+  href={href}
+  target="_blank"
+  class:list={[baseClass, variantClass, extraClass, disabledClass]}
+  onclick="onClick"
+  tabindex={disabled ? -1 : 0}
+>
+  <slot />
+</a>

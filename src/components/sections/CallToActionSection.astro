@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import ImageBookLogoTransparent from "../../assets/book-logo-transparent.png";
+import { links } from "../../const";
+import BuyButtonGroup from "../BuyButtonGroup.astro";
+import LinkText from "../LinkText.astro";
+import SectionContainer from "./SectionContainer.astro";
+import SectionTitle from "./SectionTitle.astro";
+---
+
+<SectionContainer extraClass="space-y-12">
+  <div>
+    <SectionTitle> Get your copy of</SectionTitle>
+    <Image
+      class="w-[300px] m-4"
+      src={ImageBookLogoTransparent}
+      alt="Book Cover"
+    />
+  </div>
+  <p class="text-center">
+    <LinkText href={links.bookSampleChapters}
+      >Read free sample chapters</LinkText
+    >
+    or get your copy now!
+  </p>
+  <BuyButtonGroup />
+</SectionContainer>

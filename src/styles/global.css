@@ -5,4 +5,6 @@
 @theme {
   --font-sans: "Overpass", "sans-serif";
   --font-display: "Satisfy", "cursive";
+  --color-theme: #97c3e0;
+  --color-accent: #ffab40;
 }

@@ -1,0 +1,54 @@
+---
+import { Image } from "astro:assets";
+import AvatorImage from "../../assets/avatar.jpg";
+import { links } from "../../const";
+import LinkText from "../LinkText.astro";
+import SectionContainer from "./SectionContainer.astro";
+import SectionTitle from "./SectionTitle.astro";
+---
+
+<SectionContainer extraClass="bg-gray-100 space-y-4">
+  <SectionTitle>
+    About <span class="text-theme">the Author</span>
+  </SectionTitle>
+  <Image
+    class="size-60 rounded-full ring-2 ring-accent fill-white"
+    src={AvatorImage}
+    alt="User Avatar"
+  />
+  <p class="font-bold">Meet Olivia!</p>
+  <div class="lg:w-[800px] w-full px-8 sm:px-16 space-y-4">
+    <p>
+      Olivia is a Nationally Certified Pilates Teacher and a Lead Instructor at
+      Club Pilates Chicago. As a teacher, she loves to explore fun and
+      challenging shapes on the reformer and celebrate all the little victories
+      on the way to achieving each difficult exercise. Olivia is passionate
+      about helping her clients exceed their expectations of success in group
+      classes and private sessions.
+    </p>
+
+    <p>
+      In 2020, Olivia launched the <LinkText href={links.pilatesTeachersManual}
+        ><em class="italic">Pilates Teachers' Manual</em></LinkText
+      > podcast to share the valuable lessons she's learned throughout her career,
+      hoping to help other instructors thrive. She also created the <LinkText
+        href={links.pilatesStudentsManual}
+        ><em class="italic">Pilates Students' Manual</em></LinkText
+      > podcast to further expand her reach and share her Pilates insights with a
+      wider audience. These two podcast projects, along with her <LinkText
+        href={links.youtube}>YouTube channel</LinkText
+      >, have allowed her to expand her role as an educator and connect with a
+      global Pilates community.
+    </p>
+
+    <p>
+      You can stay connected with Olivia's work on Instagram (<LinkText
+        href={links.pilatesTeachersManualIg}>@PilatesTeachersManual</LinkText
+      > and <LinkText href={links.pilatesStudentsManualIg}
+        >@PilatesStudentsManual</LinkText
+      >) or join her community of supporters on her <LinkText
+        href={links.buyMeACoffee}>Buy Me a Coffee</LinkText
+      > page.
+    </p>
+  </div>
+</SectionContainer>

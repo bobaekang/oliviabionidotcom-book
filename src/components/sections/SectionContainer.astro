@@ -1,0 +1,11 @@
+---
+interface Props {
+  extraClass?: string;
+}
+const { extraClass = "" } = Astro.props;
+const defualtClass = "flex flex-col items-center justify-center py-28 text-lg";
+---
+
+<section class:list={[defualtClass, extraClass]}>
+  <slot />
+</section>

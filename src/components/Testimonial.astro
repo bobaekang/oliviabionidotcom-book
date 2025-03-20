@@ -1,0 +1,29 @@
+---
+interface Props {
+  name: string;
+  text?: string;
+  description?: string;
+}
+
+const { text, name, description = "Description" } = Astro.props;
+---
+
+<data>
+  <div
+    class="mx-auto w-[320px] bg-yellow-100 text-gray-700 text-center relative"
+  >
+    <div class="p-6 pb-2 space-y-4">
+      <p class="before:content-['“'] after:content-['”']" set:html={text} />
+      <div>
+        <div class="font-bold">{name}</div>
+        <div set:html={description} />
+      </div>
+    </div>
+    <div class="flex justify-end">
+      <div
+        class="border-t-[40px] border-t-yellow-200 border-r-[50px] border-r-white"
+      >
+      </div>
+    </div>
+  </div>
+</data>

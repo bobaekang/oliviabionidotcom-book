@@ -1,0 +1,34 @@
+---
+import BuyButtonGroup from "../BuyButtonGroup.astro";
+import LinkText from "../LinkText.astro";
+import SectionContainer from "./SectionContainer.astro";
+import SectionTitle from "./SectionTitle.astro";
+---
+
+<SectionContainer extraClass="bg-gray-100 space-y-8">
+  <SectionTitle>
+    About <span class="text-theme">the Book</span>
+  </SectionTitle>
+  <div class="lg:w-[800px] w-full px-8 sm:px-16 space-y-4">
+    <p>
+      <em class="italic">Pilates Teachers Manual: The Book</em> is your new essential
+      resource for teaching with confidence, growing your business, and truly thriving
+      as a Pilates instructor. After five years and over 130 episodes of hosting
+      the popular <LinkText
+        href="https://pilatesteachersmanual.oliviabioni.com/"
+        ><em>Pilates Teachers' Manual</em> podcast</LinkText
+      >, Olivia has distilled her best advice into this practical, no-nonsense
+      book. Inside, you'll find everything from building strong client
+      relationships to running a sustainable business, plus tips, shortcuts, and
+      insights to help you avoid common pitfalls and achieve lasting success.
+    </p>
+    <p>
+      Whether you're just starting out or ready to take your career to the next
+      level, this book is packed with actionable strategies and industry
+      insights to help you reach your goal. Ready to elevate your career and
+      make your work as a teacher more fulfilling? This book is here to guide
+      and support you every step of the way!
+    </p>
+  </div>
+  <BuyButtonGroup />
+</SectionContainer>

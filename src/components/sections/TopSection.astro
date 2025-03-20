@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import ImageBookCover from "../../assets/book-cover.png";
+import { links } from "../../const";
+import BuyButtonGroup from "../BuyButtonGroup.astro";
+import LinkText from "../LinkText.astro";
+import SectionContainer from "./SectionContainer.astro";
+---
+
+<SectionContainer>
+  <div
+    class="lg:w-[1024px] w-full px-8 sm:px-16 flex flex-row space-x-8 space-y-16 justify-center items-center flex-wrap"
+  >
+    <div class="relative">
+      <div class="size-48 bg-theme absolute -top-18 -left-14 -z-10"></div>
+      <div class="flex flex-col space-y-12 justify-center items-center">
+        <h1 class="font-bold text-5xl">
+          Pilates Teachers' Manual
+          <br />
+          <span class="font-display">The Book</span>
+        </h1>
+        <div>
+          <p>Your guide to becoming a great Pilates teacher.</p>
+          <p>
+            <LinkText href={links.bookSampleChapters}
+              >Read free sample chapters</LinkText
+            > or get your copy now!
+          </p>
+        </div>
+        <BuyButtonGroup />
+      </div>
+    </div>
+    <Image
+      class="w-[300px] block shadow-xl"
+      src={ImageBookCover}
+      alt="Book Cover"
+    />
+  </div>
+</SectionContainer>
