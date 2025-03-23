@@ -64,7 +64,7 @@ export const footerLinks = [
     href: links.pilatesStudentsManual,
   },
   {
-    label: "Podcast YouTube channel",
+    label: "YouTube channel",
     href: links.youtube,
   },
 ];
