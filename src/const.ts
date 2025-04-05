@@ -17,7 +17,7 @@ export const testimonials = [
   {
     name: "Dan Baker",
     description: `Author of <a href="https://www.amazon.com/dp/0648602001" target="_blank" class="${linkClass}">A Pilates Journey</a> and Teacher Trainer at <a href="https://www.thepilateshive.com.au/" target="_blank" class="${linkClass}">The Pilates Hive</a>`,
-    text: `<em>Pilates Teachers Manual: The Book</em> is an invaluable resource for all Pilates teachers. Filled to the brim with tips and advice, it should be recommended reading for all Pilates teachers.`,
+    text: `<em>Pilates Teachers' Manual: The Book</em> is an invaluable resource for all Pilates teachers. Filled to the brim with tips and advice, it should be recommended reading for all Pilates teachers.`,
   },
   {
     name: "Cody Jussel",
@@ -37,7 +37,7 @@ export const testimonials = [
   {
     name: "Micki Price-Havard",
     description: `Owner of <a href="http://mickiphit.com" target="_blank" class="${linkClass}">MickiPhit Wellness</a>`,
-    text: "<em>Pilates Teacher Manual: The Book</em> is a fantastic resource for aspiring Pilates instructors, offering clear guidance on teaching, cueing, and building a sustainable career.",
+    text: "<em>Pilates Teachers' Manual: The Book</em> is a fantastic resource for aspiring Pilates instructors, offering clear guidance on teaching, cueing, and building a sustainable career.",
   },
   {
     name: "Mara Sievers",
