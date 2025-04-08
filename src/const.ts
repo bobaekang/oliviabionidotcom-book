@@ -10,6 +10,7 @@ export const links = {
   youtube: "https://www.youtube.com/channel/UCOLgATdG1_PDxMiFOuv_gwg",
   pilatesTeachersManualIg: "https://www.instagram.com/pilatesteachersmanual/",
   pilatesStudentsManualIg: "https://www.instagram.com/pilatesstudentsmanual/",
+  amazonBookKindle: "https://www.amazon.com/dp/B0F449B6MQ",
 };
 
 const linkClass = "italic underline hover:text-blue-500 focus:text-blue-500";
