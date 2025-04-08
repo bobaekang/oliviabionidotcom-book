@@ -4,26 +4,31 @@ import LinkButton from "./LinkButton.astro";
 ---
 
 <div class="sm:flex space-x-4 hidden">
-  <div>
+  <div class="flex flex-col text-center">
     <LinkButton href={links.shopBookCollection} variant="filled"
       >Buy EPUB or PDF</LinkButton
     >
+    <span class="m-2 text-sm"
+      >(<span class="line-through text-gray-500">$30</span> $15)
+    </span>
   </div>
   <div class="flex flex-col text-center">
     <LinkButton href={links.amazonBookKindle} variant="outlined"
       >Buy on Kindle</LinkButton
     >
+    <span class="m-2 text-sm">($30)</span>
   </div>
-</div>
-<div class="sm:hidden space-y-4 flex flex-col">
-  <div>
-    <LinkButton href={links.shopBookCollection} variant="filled"
-      >Buy EPUB or PDF</LinkButton
-    >
-  </div>
-  <div class="flex flex-col text-center">
-    <LinkButton href={links.amazonBookKindle} variant="outlined"
-      >Buy on Kindle</LinkButton
-    >
+
+  <div class="sm:hidden space-y-4 flex flex-col">
+    <div>
+      <LinkButton href={links.shopBookCollection} variant="filled"
+        >Buy EPUB or PDF</LinkButton
+      >
+    </div>
+    <div class="flex flex-col text-center">
+      <LinkButton href={links.amazonBookKindle} variant="outlined"
+        >Buy on Kindle</LinkButton
+      >
+    </div>
   </div>
 </div>
